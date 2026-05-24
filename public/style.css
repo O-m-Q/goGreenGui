@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #0d1117;
+  color: #c9d1d9;
+}
+
+.wrap {
+  display: flex;
+  min-height: 100vh;
+}
+
+.side {
+  width: 160px;
+  padding: 16px;
+  border-right: 1px solid #30363d;
+}
+
+.side h1 {
+  font-size: 18px;
+  margin: 0 0 16px;
+}
+
+.hide {
+  display: none;
+}
+
+#authBox {
+  margin-bottom: 12px;
+  font-size: 13px;
+}
+
+#authBox a {
+  color: #58a6ff;
+}
+
+#userLabel {
+  display: block;
+  margin-bottom: 6px;
+}
+
+#logoutBtn {
+  margin-bottom: 8px;
+}
+
+.side label {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 13px;
+}
+
+.side select {
+  display: block;
+  width: 100%;
+  margin-top: 4px;
+}
+
+.side button {
+  display: block;
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+#statusLine {
+  font-size: 12px;
+  color: #8b949e;
+}
+
+main {
+  flex: 1;
+  padding: 16px;
+  overflow: auto;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.row {
+  display: flex;
+  gap: 3px;
+}
+
+.tile {
+  width: 11px;
+  height: 11px;
+  border-radius: 2px;
+  background: #161b22;
+  cursor: pointer;
+}
+
+.tile.future {
+  opacity: 0.2;
+  cursor: default;
+}
+
+.tile.on.lvl1 {
+  background: #0e4429;
+}
+
+.tile.on.lvl2 {
+  background: #006d32;
+}
+
+.tile.on.lvl3 {
+  background: #26a641;
+}
+
+.tile.on.lvl4 {
+  background: #39d353;
+}

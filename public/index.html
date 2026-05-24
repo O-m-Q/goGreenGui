@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>goGreen gui</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <aside class="side">
+      <h1>goGreen</h1>
+      <div id="authBox">
+        <a id="loginLink" href="/auth/github">login github</a>
+        <span id="userLabel" class="hide"></span>
+        <button id="logoutBtn" class="hide">logout</button>
+      </div>
+      <label>
+        repo
+        <select id="repoPick" disabled>
+          <option value="">-- login first --</option>
+        </select>
+      </label>
+      <label>
+        intensity
+        <select id="intensityPick">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+      </label>
+      <button id="pushBtn" disabled>push commits</button>
+      <button id="clearBtn">clear</button>
+      <p id="statusLine"></p>
+    </aside>
+    <main>
+      <div id="gridBox" class="grid"></div>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
